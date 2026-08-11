@@ -1,0 +1,68 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap");
+
+:root {
+  --bg: #0b1d24;
+  --bg-soft: #0e2530;
+  --surface: #123039;
+  --surface-border: rgba(110, 231, 200, 0.14);
+  --hairline: rgba(234, 242, 241, 0.09);
+  --text: #eaf2f1;
+  --text-muted: #8fa9ad;
+  --coral: #ff6b4a;
+  --coral-on: #2a0e05;
+  --aqua: #6ee7c8;
+  --aqua-dim: rgba(110, 231, 200, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.font-mono {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--aqua);
+  outline-offset: 2px;
+}
+
+@keyframes scroll-tools {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.tools-track {
+  animation: scroll-tools 28s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tools-track {
+    animation: none;
+  }
+}
