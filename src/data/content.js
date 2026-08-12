@@ -71,7 +71,7 @@ export const tools = [
 export const about = {
   eyebrow: "Quem monta o pipeline",
   name: "Wendel Davy Viana",
-  p1: "Analista de planejamento e estudante de Desenvolvimento de Sistemas, com um pé na gestão de tráfego pago e outro em automação e IA aplicada.",
+  p1: "Analista de Planejamento e formado em Análise e Desenvolvimento de Sistemas, com mais de 3 anos de experiência em tecnologia, desenvolvimento de software e gestão de tráfego pago. Atualmente, foco em automação, Inteligência Artificial e soluções digitais.",
   p2: "Essa mistura — dados, tecnologia e automação — é o que uso todos os dias, e é a mesma coisa que aplico pra ajudar empresas a vender mais sem precisar contratar um time inteiro pra isso.",
 };
 
