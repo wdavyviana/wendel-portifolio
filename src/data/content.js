@@ -67,13 +67,10 @@ export const tools = [
   { name: "HTML5", file: "img/html5.png" },
   { name: "CSS3", file: "img/css3.png" },
   { name: "Node.js", file: "img/nodejs.png" },
-  { name: "React", file: "img/react.png" },
-  { name: "Next.js", file: "img/nextjs.png" },
-  { name: "Figma", file: "img/figma.png" },
-  { name: "Zapier", file: "img/zapier.png" },
-  { name: "Make", file: "img/make.png" },
+  { name: "React", file: "img/reactjs.png" },
   { name: "ChatGPT", file: "img/chatgpt.png" },
-  { name: "MidJourney", file: "img/midjourney.png" }, 
+  { name: "PowerBi", file: "img/powerbi.png" },
+  { name: "ClaudeAi", file: "img/claudeai.png" },
 ];
 
 export const about = {
