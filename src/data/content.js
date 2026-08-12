@@ -69,7 +69,7 @@ export const tools = [
   { name: "Node.js", file: "img/nodejs.png" },
   { name: "React", file: "img/reactjs.png" },
   { name: "ChatGPT", file: "img/chatgpt.png" },
-  { name: "PowerBi", file: "img/powerbi.png" },
+  { name: "PowerBi", file: "img/power-bi.png" },
   { name: "ClaudeAi", file: "img/claudeai.png" },
 ];
 
