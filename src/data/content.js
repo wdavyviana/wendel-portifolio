@@ -16,7 +16,7 @@ export const hero = {
   ctaPrimary: "Falar comigo",
   ctaSecondary: "Ver serviços",
   badge: "disponível pra novos projetos",
-  photo: "img/perfil2.jpeg",
+  photo: "img/perfil3.png",
 };
 
 // Ícones vêm de lucide-react. Troque o campo "icon" por outro nome de
