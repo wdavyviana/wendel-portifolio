@@ -71,6 +71,8 @@ export const tools = [
   { name: "ChatGPT", file: "img/chatgpt.png" },
   { name: "PowerBi", file: "img/power-bi.png" },
   { name: "ClaudeAi", file: "img/claudeai.png" },
+  { name: "Python", file: "img/python.png" },
+  { name: "Figma", file: "img/figma.png" },
 ];
 
 export const about = {
