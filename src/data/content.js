@@ -1,13 +1,13 @@
 // Todo o texto do site fica aqui. Edite este arquivo pra atualizar o conteúdo
 // sem precisar tocar nos componentes.
-
+ 
 export const nav = [
   { href: "#servicos", label: "Serviços" },
   { href: "#sobre", label: "Sobre" },
   { href: "#ferramentas", label: "Ferramentas" },
   { href: "#contato", label: "Contato" },
 ];
-
+ 
 export const hero = {
   eyebrow: "Fortaleza · CE — tráfego, automação e IA",
   title: "Uma pessoa cuidando de todo o fluxo de crescimento da sua empresa.",
@@ -18,7 +18,7 @@ export const hero = {
   badge: "disponível pra novos projetos",
   photo: "img/perfil3.png",
 };
-
+ 
 // Ícones vêm de lucide-react. Troque o campo "icon" por outro nome de
 // https://lucide.dev/icons se quiser mudar.
 export const services = [
@@ -51,7 +51,7 @@ export const services = [
     desc: "O site, o sistema ou o painel que fica rodando por trás de tudo isso, sem depender de mil ferramentas soltas.",
   },
 ];
-
+ 
 // Ferramentas mostradas na faixa animada. "file" é o caminho da imagem
 // dentro de /public — reaproveite os arquivos do repositório antigo.
 export const tools = [
@@ -74,23 +74,30 @@ export const tools = [
   { name: "Python", file: "img/python.png" },
   { name: "Figma", file: "img/figma.png" },
 ];
-
+ 
 export const about = {
   eyebrow: "Quem monta o pipeline",
   name: "Wendel Davy Viana",
   p1: "Analista de Planejamento e formado em Análise e Desenvolvimento de Sistemas, com mais de 3 anos de experiência em tecnologia, desenvolvimento de software e gestão de tráfego pago. Atualmente, foco em automação, Inteligência Artificial e soluções digitais.",
   p2: "Essa mistura — dados, tecnologia e automação — é o que uso todos os dias, e é a mesma coisa que aplico pra ajudar empresas a vender mais sem precisar contratar um time inteiro pra isso.",
 };
-
+ 
 export const contact = {
   eyebrow: "Vamos conversar",
   title: "Economize seu tempo. Entre em contato.",
   subtitle:
     "Deixe seu e-mail que eu retorno com um diagnóstico gratuito sobre onde a automação ou o tráfego pago pode destravar seus resultados.",
-  formAction: "https://api.sheetmonkey.io/form/gqPtdWoiBJ4ZmcpNrZvYQT",
 };
-
+ 
+// Botão flutuante do WhatsApp. "number" é o número com DDI (55) + DDD + número,
+// só dígitos. "message" é o texto que já vem preenchido na conversa.
+export const whatsapp = {
+  number: "5585984174199",
+  message: "Olá, Wendel! Vi seu portfólio e quero conversar sobre um projeto.",
+};
+ 
 export const footer = {
   github: "https://github.com/wdavyviana",
   instagram: "",
 };
+ 

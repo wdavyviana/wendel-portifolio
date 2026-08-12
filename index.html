@@ -10,5 +10,17 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+ 
+    <!--
+      Formulário estático invisível, só para o Netlify detectar os campos
+      durante o build (o app é uma SPA, então o form "real" só existe depois
+      que o React renderiza, e o robô do Netlify não enxerga isso).
+      Os campos abaixo têm que bater exatamente com os do Contact.jsx.
+    -->
+    <form name="contato" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="email" name="Email" />
+      <input type="text" name="Created" />
+      <input type="text" name="bot-field" />
+    </form>
   </body>
 </html>
