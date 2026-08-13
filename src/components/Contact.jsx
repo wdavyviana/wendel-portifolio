@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ArrowRight, Check } from "lucide-react";
 import Eyebrow from "./Eyebrow";
+import Reveal from "./Reveal";
 import { contact } from "../data/content";
  
 function encode(data) {
@@ -30,7 +31,7 @@ export default function Contact() {
       });
       setStatus("sent");
       setEmail("");
-    } catch (err) {
+    } catch {
       setStatus("error");
     }
   }
@@ -38,7 +39,7 @@ export default function Contact() {
   return (
     <section id="contato" className="max-w-[1100px] mx-auto px-6 py-24">
       <div className="grid md:grid-cols-2 gap-12 items-center">
-        <div>
+        <Reveal>
           <Eyebrow>{contact.eyebrow}</Eyebrow>
           <h2 className="font-display font-bold text-[clamp(26px,3.5vw,34px)] mb-4">
             {contact.title}
@@ -46,7 +47,7 @@ export default function Contact() {
           <p className="text-[var(--text-muted)] text-base leading-relaxed max-w-[420px]">
             {contact.subtitle}
           </p>
-        </div>
+        </Reveal>
  
         {status === "sent" ? (
           <div className="bg-[var(--surface)] border border-[var(--hairline)] rounded-2xl p-7 flex flex-col items-center justify-center gap-3 text-center min-h-[180px]">
@@ -59,13 +60,15 @@ export default function Contact() {
             </p>
           </div>
         ) : (
-          <form
+          <Reveal
+            as="form"
+            delay={120}
             name="contato"
             method="post"
             data-netlify="true"
             netlify-honeypot="bot-field"
             onSubmit={handleSubmit}
-            className="bg-[var(--surface)] border border-[var(--hairline)] rounded-2xl p-7 flex flex-col gap-3.5"
+            className="bg-[var(--surface)] border border-[var(--hairline)] rounded-2xl p-7 flex flex-col gap-3.5 transition-colors duration-300 hover:border-[var(--surface-border)]"
           >
             <input type="hidden" name="form-name" value="contato" />
             <p className="hidden">
@@ -83,7 +86,7 @@ export default function Contact() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="seu@email.com"
-                className="block w-full mt-1.5 bg-[var(--bg)] border border-[var(--hairline)] rounded-[10px] px-3.5 py-3 text-[var(--text)] text-[15px] outline-none"
+                className="block w-full mt-1.5 bg-[var(--bg)] border border-[var(--hairline)] rounded-[10px] px-3.5 py-3 text-[var(--text)] text-[15px] outline-none transition-colors duration-200 focus:border-[var(--aqua)]"
               />
             </label>
  
@@ -96,15 +99,14 @@ export default function Contact() {
             <button
               type="submit"
               disabled={status === "sending"}
-              className="bg-[var(--coral)] text-[var(--coral-on)] font-semibold text-[15px] px-4.5 py-3.5 rounded-[10px] border-none cursor-pointer flex items-center justify-center gap-2 disabled:opacity-60"
+              className="bg-[var(--coral)] text-[var(--coral-on)] font-semibold text-[15px] px-4.5 py-3.5 rounded-[10px] border-none cursor-pointer flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed transition-all duration-200 enabled:hover:brightness-110 enabled:hover:scale-[1.02]"
             >
               {status === "sending" ? "Enviando..." : "Enviar"}{" "}
               {status !== "sending" && <ArrowRight size={16} />}
             </button>
-          </form>
+          </Reveal>
         )}
       </div>
     </section>
   );
 }
- 

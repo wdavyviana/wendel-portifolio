@@ -1,6 +1,6 @@
 import { Mail } from "lucide-react";
 import { footer } from "../data/content";
-
+ 
 function GithubIcon(props) {
   return (
     <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" {...props}>
@@ -8,7 +8,7 @@ function GithubIcon(props) {
     </svg>
   );
 }
-
+ 
 function InstagramIcon(props) {
   return (
     <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8" {...props}>
@@ -18,7 +18,7 @@ function InstagramIcon(props) {
     </svg>
   );
 }
-
+ 
 export default function Footer() {
   return (
     <footer className="border-t border-[var(--hairline)] px-6 py-7">
@@ -33,7 +33,7 @@ export default function Footer() {
               href={footer.github}
               target="_blank"
               rel="noreferrer"
-              className="text-[var(--text-muted)]"
+              className="text-[var(--text-muted)] transition-all duration-200 hover:text-[var(--aqua)] hover:scale-110 inline-block"
               aria-label="GitHub"
             >
               <GithubIcon />
@@ -44,7 +44,7 @@ export default function Footer() {
               href={footer.instagram}
               target="_blank"
               rel="noreferrer"
-              className="text-[var(--text-muted)]"
+              className="text-[var(--text-muted)] transition-all duration-200 hover:text-[var(--aqua)] hover:scale-110 inline-block"
               aria-label="Instagram"
             >
               <InstagramIcon />
@@ -52,7 +52,7 @@ export default function Footer() {
           )}
           <a
             href="#contato"
-            className="text-[var(--text-muted)]"
+            className="text-[var(--text-muted)] transition-all duration-200 hover:text-[var(--aqua)] hover:scale-110 inline-block"
             aria-label="Contato"
           >
             <Mail size={18} />
